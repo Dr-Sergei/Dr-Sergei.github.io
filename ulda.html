@@ -38,56 +38,54 @@
         		font-family: sans-serif; 
         		line-height: 1.5; 
        	 		background-color: no; 
-        		padding: 1rem; 
+        		padding: 0; 
+				margin: 0;
              	}
 			
 			.site-footer {
 				display: block;
 				background-color: #211510;
+				background-image: linear-gradient(#211510, #381e12, #472718);
 				color: #244d66;
 				text-align: right;
 				font-size: 1.5rem;
 				font-weight: 300;
-				min-width: 100%;
+				
+				width: 100%;
 				border: 3px solid #504137;
 				margin: 0 -30px;
 				padding: 10px 30px;
 				font-family: Russo One;
-				text-decoration: none;
 				}
 
 			.bosses{
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
 				background-color: #211510;
+				background-image: linear-gradient(#211510, #381e12, #472718);
+
 				font-size: 1.5rem;
 				font-weight: 300;
-				min-width: 100%;
+			
+				width: 100%;
 				border: 3px solid #504137;
-				margin: 0 -30px;
+				margin: 0 auto;
 				padding: 0;
 				font-family: Russo One;
 				text-align: center;
-				
-				}	
+				}
+
+			
+
 			/* Collapsing Margins vermeiden*/
-			h1, h2, p, ol, li, blockquote, section {
+			h1, h2, p, ol, blockquote, section {
 				margin-top:0 ;
 				}
 
-			ol{
-				margin: 0 auto;
-				padding: 0.5rem 0;
-				}	
-
-			li	{
-				display: inline;
-				padding: 0 1rem;
-				margin: 0 auto;
-				
-				}	
-
-			li a {
+			div a {
 				text-decoration: none;
-				padding-bottom:0;
+				padding:1rem 1rem;
 				}
 
 			.site-footer a{
@@ -203,7 +201,9 @@
   	 				min-height: 216px;
 					}
 				}
+
  	   </style>
+
     </head>
 
 	<!-- Bereich der Body -->
@@ -217,26 +217,25 @@
 
 		<!--Navigationsbereich-->
 		<nav>
-
+			<section class="bosses">
+				<div><a href="#1">Левиафан</a></div>
+				<div><a href="#2">Острокрылая</a></div>
+				<div><a href="#3">Игнис</a></div>
+				<div><a href="#4">ХТ-002</a></div>
+				<div><a href="#5">Железное Собрание</a></div>
+				<div><a href="#6">Кологарн</a></div>
+				<div><a href="#7">Кошатница</a></div>
+				<div><a href="#8">Ходир</a></div>
+				<div><a href="#9">Торим</a></div>
+				<div><a href="#10">Фрея</a></div>
+				<div><a href="#11">Мимирон</a></div>
+				<div><a href="#12">Везакс</a></div>
+				<div><a href="#13">Йог Сарон</a></div>
+			</section>
 		</nav>
 		
 		<!--Hauptinhalt-->
     	<main>
-			<section class="bosses">
-				<ol>
-					<li><a href="#1">Левиафан</a></li>
-					<li><a href="#2">Острокрылая</a></li>
-					<li><a href="#3">Игнис</a></li>
-					<li><a href="#4">ХТ-002</a></li>
-					<li><a href="#5">Железное Собрание</a></li>
-					<li><a href="#6">Кологарн</a></li>
-					<li><a href="#7">Кошатница</a></li>
-					<li><a href="#8">Ходир</a></li>
-					<li><a href="#9">Торим</a></li>
-					<li><a href="#10">Фрея</a></li>
-					<li><a href="#11">Мимирон</a></li>
-				</ol>
-			</section>
 
         	<div class="flex-container">
     			<h2 id="1">Огненный левиафан</h2>

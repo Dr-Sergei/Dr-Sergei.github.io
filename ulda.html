@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="ru" id="top">
+	<!--head -> Meta angaben plus die Bescgreibung-->
+  	<head>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, schrink-to-fit=no">
+
+    	<title>Ульдуар 10 человек Гильдия ЛиС</title>
+		<meta name="description" content="Прохождение Рейда Ульдуар в 10 человек, частично с Хардмодами(Фрея, Торим, ХТ-002)">
+    
+    	<!-- CSS für diese Übungsseite --> 
+    	<style>
+
+			/*schriftarten*/
+			/* russo-one-regular - latin_cyrillic */
+			@font-face {
+  				font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  				font-family: 'Russo One';
+  				font-style: normal;
+  				font-weight: 400;
+  				src: url('../fonts/russo-one-v14-latin_cyrillic-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+       				 url('../fonts/russo-one-v14-latin_cyrillic-regular.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+				}
+
+
+      		html { 
+        		background-color: whitesmoke;
+        		background-image: url(bilder/ulduar.png);
+        		/* background-image von https://www.toptal.com/designers/subtlepatterns/tileable-wood/ */ 
+        		background-repeat: repeat; 
+        		background-position: top left; 
+        		background-attachment: fixed; 
+				background-size: cover;
+				scroll-behavior: smooth;
+     			}     
+      
+      		body {
+        		font-family: sans-serif; 
+        		line-height: 1.5; 
+       	 		background-color: no; 
+        		padding: 1rem; 
+             	}
+			
+			.site-footer{
+				display: block;
+				background-color: #211510;
+				color: #244d66;
+				text-align: right;
+				font-size: 1.5rem;
+				font-weight: 300;
+				min-width: 100%;
+				border: 1px solid #504137;
+				margin: 0 -30px;
+				padding: 10px 30px;
+				font-family: Russo One;
+				text-decoration: none;
+				}
+
+			.bosses{
+				background-color: #211510;
+				font-size: 1.5rem;
+				font-weight: 300;
+				min-width: 100%;
+				border: 2px solid #504137;
+				margin: 0 -30px;
+				padding: 10px 30px;
+				font-family: Russo One;
+				text-align: center;
+				
+				}	
+			li{
+				display: inline;
+				padding-right: 1rem;
+				
+				}	
+
+			li a {
+				text-decoration: none;
+				}
+
+			
+				
+			a:link{
+				color:#f8b700;
+			}	
+
+			a:visited{
+				color:#f8b700;
+				}	
+
+			/* mouse over link */
+			a:hover {
+  				color: white;
+			}	
+
+      		h1 	{ 
+        		font-size: 4.5rem; 
+        		margin-top: 0; 
+        		margin-bottom: 1rem;
+				color:#0eed99;
+				text-align: center;
+				text-shadow: 2px 2px #34318e;
+				}
+
+	  		h2 	{ 
+       			font-size: 3.5rem; 
+        		margin-top: 0; 
+        		margin-bottom: 1rem;
+				margin-right: 50%;
+				margin-left: 50%;
+				padding: 0;
+				color:#0eed99;
+				text-align: center;
+				text-shadow: 2px 2px #34318e;
+				min-width: 900px;
+      			}
+      
+	  		p	{
+				font-size: 1.5rem; 
+				color:#630eedc9;
+				text-shadow: 2px 2px #0cffdf;
+				font-weight: 300;
+				text-align: center;
+	  			}
+    
+	 		iframe{
+	    		border: 8px solid #244d66;
+				min-width: 1000px;
+				min-height: 590px;
+        		margin: 0;
+				padding: 0;
+        		text-align: center;
+        		line-height: 75px;
+        		font-size: 30px;
+				}
+      
+			figcaption{
+				font-size: 2rem;	
+				color:#630eedc9;
+				text-shadow: 2px 2px #0cffdf;
+				margin-bottom: 2rem;
+				}
+
+    		.flex-container{
+				display:flex;
+				flex-wrap:wrap;
+				justify-content: center;
+				}
+	
+			/* Responsive layout */
+			@media (max-width: 1020px ) {
+  				h2	{
+					min-width: 300px;
+					text-align: center;
+					}
+
+				iframe{
+					min-width: 650px;
+					min-height: 416px;
+					}
+				}
+
+			@media (max-width: 760px)  {
+	
+				h1	{
+					font-size: 2.5rem; 
+        			margin-top: 0; 
+        			margin-bottom: 1rem;
+					color:#0eed99;
+					text-align: center;
+					text-shadow: 2px 2px #34318e;
+					}	
+
+				h2	{
+					font-size: 2.5rem; 	
+ 	    			}
+
+				iframe{
+ 	 				min-width: 350px;
+  	 				min-height: 216px;
+					}
+				}
+ 	   </style>
+    </head>
+
+	<!-- Bereich der Body -->
+
+  	<body>
+		<header>
+			<h1>Прохождение Ульдуара Гильдией ЛиС в 10 человек</h1>
+			<p>Рейдлидер Катлея</p>
+			<p>Дата прохождения: 05.02.2023</p>
+		</header>
+
+		<!--Navigationsbereich-->
+		<nav>
+
+		</nav>
+		
+		<!--Hauptinhalt-->
+    	<main>
+			<section class="bosses">
+				<ol>
+					<li><a href="#1">Левиафан</a></li>
+					<li><a href="#2">Острокрылая</a></li>
+					<li><a href="#3">Игнис</a></li>
+					<li><a href="#4">ХТ-002</a></li>
+					<li><a href="#5">Железное Собрание</a></li>
+					<li><a href="#6">Кошатница</a></li>
+					<li><a href="#7">Ходир</a></li>
+					<li><a href="#8">Торим</a></li>
+					<li><a href="#9">Фрея</a></li>
+					<li><a href="#10">Мимирон</a></li>
+				</ol>
+			</section>
+
+        	<div class="flex-container">
+    			<h2 id="1">Огненный левиафан</h2>
+     			<div class="flex-item">
+
+					<iframe src="https://www.youtube.com/embed/nOnN8_TemW8?start=20" loading="lazy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				
+					<figcaption>Убийство левиафана</figcaption>
+	 			</div>
+    
+				<h2 id="2">Острокрылая</h2>
+	 			<div class="flex-item">
+
+					<iframe src="https://www.youtube.com/embed/Hr7zAsMIgIQ" loading="lazy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>	
+					
+					<figcaption>Убийство отсрокрылой</figcaption>
+	 			</div>
+
+    			<h2 id="3">Игнис</h2>
+
+	 			<div class="flex-item">
+
+					<iframe src="https://www.youtube.com/embed/B5Wy5v0uoaI" loading="lazy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+			
+					<figcaption>Убийство игниса</figcaption>
+			 	</div>
+
+    			<h2 id="4">Физрук</h2>
+	 			<div class="flex-item">
+
+					<iframe src="https://www.youtube.com/embed/BDlBvaXm45Y" loading="lazy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+			
+					<figcaption>Убийство физрука</figcaption>
+	 			</div>
+
+    			<h2 id="5">Железное собрание</h2>
+	 			<div class="flex-item">
+					
+					<iframe src="https://www.youtube.com/embed/g3zAoqiLVG4?" loading="lazy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+						
+					<figcaption>Убийство железного собрания</figcaption>
+	 			</div>
+ 
+    			<h2>Кологарн</h2>
+     			<div class="flex-item">
+
+					<iframe src="https://www.youtube.com/embed/5QuuA78cKn8?" loading="lazy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+						
+					<figcaption>Убийство кологарна</figcaption>
+				</div>
+  
+    			<h2>Кошатница</h2>
+     			<div class="flex-item">
+					
+					<iframe src="https://www.youtube.com/embed/syzmEeiAgik?start=3" loading="lazy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+						
+					<figcaption>Убийство кошатницы</figcaption>
+				</div>
+  
+    			<h2>Ходир</h2>
+     			<div class="flex-item">
+
+					<iframe src="https://www.youtube.com/embed/p_2_32xyUJY?controls=0&amp;start=3" loading="lazy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+						
+					<figcaption>Убийство ходира</figcaption>
+				</div>
+  
+    			<h2>Торим</h2>
+     			<div class="flex-item">
+				
+					<iframe src="https://www.youtube.com/embed/pbXDKoY-Bxc?start=3" loading="lazy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>	
+			
+					<figcaption>Убийство Торима</figcaption>
+				</div>
+  
+    			<h2>Фрея</h2>
+     			<div class="flex-item">
+					
+					<iframe src="https://www.youtube.com/embed/uJSrmx3lvQI" loading="lazy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+							
+				<figcaption>Убийство Фреи</figcaption>
+				</div>
+  
+    			<h2>Мимирон</h2>
+     			<div class="flex-item">
+				
+					<iframe  src="https://www.youtube.com/embed/1vxPWtcVPmo?start=8" loading="lazy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+						
+					<figcaption>Убийство Мимирона</figcaption>
+				</div>
+   
+				<h2>Везакс</h2>
+     			<div class="flex-item">
+				
+					<figcaption>Убийство везакса</figcaption>
+				</div>
+
+   				<h2>Йог Сарон</h2>
+     			<div class="flex-item">
+				
+				<figcaption>Убийство Йожика</figcaption>
+				</div>
+                             
+			</div>
+		</main>
+
+		<!--Fußbereich und Navigation-->
+		<footer class="site-footer">
+			<a href="#top">Наверх</a>
+		</footer>
+		
+  	</body>
+
+</html>

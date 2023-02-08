@@ -21,6 +21,19 @@
   				src: url('../fonts/russo-one-v14-latin_cyrillic-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
        				 url('../fonts/russo-one-v14-latin_cyrillic-regular.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 				}
+			/* alatsi-regular - latin-ext_latin_cyrillic-ext */
+			@font-face {
+  				font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  				font-family: 'Alatsi';
+  				font-style: normal;
+  				font-weight: 400;
+  				src: url('../fonts/alatsi-v10-latin-ext_latin_cyrillic-ext-regular.eot'); /* IE9 Compat Modes */
+  				src: url('../fonts/alatsi-v10-latin-ext_latin_cyrillic-ext-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       				 url('../fonts/alatsi-v10-latin-ext_latin_cyrillic-ext-regular.woff2') format('woff2'), /* Super Modern Browsers */
+      				 url('../fonts/alatsi-v10-latin-ext_latin_cyrillic-ext-regular.woff') format('woff'), /* Modern Browsers */
+      				 url('../fonts/alatsi-v10-latin-ext_latin_cyrillic-ext-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       				 url('../fonts/alatsi-v10-latin-ext_latin_cyrillic-ext-regular.svg#Alatsi') format('svg'); /* Legacy iOS */
+}
 
 
       		html { 
@@ -75,8 +88,6 @@
 			.selected-lang{
 				cursor: pointer;
 				display: flex;
-				
-				
 			}
 
 			/*Auswahl des Flagesymbols*/
@@ -86,9 +97,6 @@
 				width: 32px;
 				background-image: url(https://flagicons.lipis.dev/flags/4x3/ru.svg);
 				margin: 0 10px;
-				
-				
-
 			}
 
 			/*menu der Sprachauswahl - Hamburger Menü*/
@@ -98,12 +106,12 @@
 				min-width: 122px;
 				color:#f8b700;
 				width: 100px;
+				
 				height: 95px;
 				background-color: #29160e;
 				border: 3px solid rgb(80, 65, 55);
 				border-left: none;
 				border-radius:  0 15px 15px 0;
-				
 			}
 
 			/*Einstellungen zu Spachmenü inkl. Anzeige*/
@@ -241,26 +249,46 @@
 			/*Titel Prohozhdenije Uldi*/
       		h1 	{ 
         		font-size: 4.5rem; 
+				font-family: alatsi-regular;
         		margin: 0 auto;
 				margin-left: 15rem;
-				color:#0eed99;
+				
+				color:#f8b700;
+				background-color: #f3ec78;
+    			background-image: linear-gradient(#f8b700,#f3ec78);
+    			background-size: 100%;
+    			
+				-webkit-background-clip: text;
+    			-moz-background-clip: text;
+    			-webkit-text-fill-color: transparent; 
+    			-moz-text-fill-color: transparent;
 				
 				text-align: center;
-				text-shadow: 2px 2px #34318e;
 				max-width: 1000px;
 				}
 			
 
 	  		h2 	{ 
        			font-size: 3.5rem; 
+				font-family: alatsi-regular;
         		margin-top: 0; 
         		margin-bottom: 1rem;
+				
 				margin-right: 50%;
 				margin-left: 50%;
 				padding: 0;
-				color:#0eed99;
+				color:#f8b700;
+				
+				
+				background-color: #f3ec78;
+    			background-image: linear-gradient(#f8b700,#f3ec78);
+    			background-size: 100%;
+    			-webkit-background-clip: text;
+    			
+				-moz-background-clip: text;
+    			-webkit-text-fill-color: transparent; 
+    			-moz-text-fill-color: transparent;
 				text-align: center;
-				text-shadow: 2px 2px #34318e;
 				min-width: 900px;
       			}
       
@@ -318,6 +346,7 @@
 			@media (max-width: 760px)  {
 				h1	{
 					font-size: 2.5rem; 
+					font-family: alatsi-regular;
         			margin: 0 auto;
 					color:#0eed99;
 					text-align: center;
@@ -336,6 +365,13 @@
 					flex-direction: column;
 					justify-content: center;
 				}
+
+				/*Veränderung von Logo2 Größe*/
+				.logo2 {
+					width:450px;
+					height:200px;
+				}
+
 				}
 
  	   </style>
@@ -350,7 +386,7 @@
 			<div class="logo">
 				<a href="#"><img src="bilder/Relis.png" alt="Пламменный ЛиС"></a>
 			</div>
-			<div class="lang-menu">
+			<nav class="lang-menu">
 				<div class="selected-lang"> 
 					Russian
 				</div>
@@ -359,7 +395,19 @@
 					<li><a class="en">English</a></li>
 					<li><a class="tur">Turkey</a></li>
 				</ul>
-			</div>
+			</nav>
+
+			<nav class="site-nav">
+				<ul>
+					<li class="current"><a href="ulda.html">Startseite |</a></li>
+					<li><a href="#">Leistungen </a></li>
+					<li><a href="#">Bildergalerie </a></li>
+					<li><a href="#">Teammitglieder </a></li>
+					<li><a href="#">Werbevideo</a></li>	
+				</ul>
+
+			</nav>
+
 			<h1>Прохождение Ульдуара Гильдией ЛиС в 10 человек</h1>
 			<img class="logo2" src="bilder/TU.png" alt="Тайны ульдуара">
 			<p>Рейдлидер Катлея<br>

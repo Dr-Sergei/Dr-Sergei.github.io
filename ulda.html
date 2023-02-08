@@ -111,7 +111,7 @@
 				background-color: #29160e;
 				border: 3px solid rgb(80, 65, 55);
 				border-left: none;
-				border-radius:  0 15px 15px 0;
+				
 			}
 
 			/*Einstellungen zu Spachmenü inkl. Anzeige*/
@@ -170,23 +170,46 @@
 				background-image: url(https://flagicons.lipis.dev/flags/4x3/tr.svg);
 			}
 
-			/*Untere Leiste Footer*/
-			.site-footer {
-				display: block;
-				background-color: #211510;
-				background-image: linear-gradient(#211510, #29160e);
-				color: #244d66;
-				text-align: right;
-				font-size: 1.5rem;
-
-				font-weight: 300;
-				width: 100%;
-				border: 3px solid #504137;
-				margin: 0 auto;
-				margin-bottom: 1.5rem;
-				padding: 0;
-				font-family: Russo One;
+			/*Navigationsleiste in Header*/
+			.site-nav{
+					font-family:Russo one ;
+					font-size: 1rem;
+					color:#f8b700;
+					margin: 0;
+					background-color: #f3ec78;
+    				background-image: linear-gradient(#f8b700,#f3ec78);
+    				background-size: 100%;
+    				-webkit-background-clip: text;
+    				-moz-background-clip: text;
+    				-webkit-text-fill-color: transparent; 
+    				-moz-text-fill-color: transparent;
+					}
+				
+				.site-nav ul {
+					list-style: none;
+					display: flex;
+					flex-direction: column;
+					background-color: #29160e;;
+					border: 3px solid #504137;
+					border-left: none;
+					border-radius: 0 15px 15px 0;
+					margin:0;
+					padding: 0;
 				}
+
+				.site-nav ul li {
+					min-width: 228px;
+					text-align: center;
+					}
+
+				.site-nav ul li a{
+					padding: 0;
+				}
+
+
+
+
+
 
 			/*Gestaltung der Navigation*/
 			.bosses{
@@ -198,7 +221,6 @@
 				font-size: 1.5rem;
 				font-weight: 300;
 
-				width: 100%;
 				border: 3px solid #504137;
 				margin: 1rem auto;
 				padding: 1rem 0;
@@ -207,7 +229,22 @@
 				list-style: none;
 				}
 
-			
+				/*Untere Leiste Footer*/
+				.site-footer {
+				display: block;
+				background-color: #211510;
+				background-image: linear-gradient(#211510, #29160e);
+				color: #244d66;
+				text-align: right;
+				font-size: 1.5rem;
+
+				font-weight: 300;
+				border: 3px solid #504137;
+				margin: 0 auto;
+				margin-bottom: 1.5rem;
+				padding: 0;
+				font-family: Russo One;
+				}
 
 			/* Collapsing Margins vermeiden*/
 			h1, h2, p, ol, blockquote, section {
@@ -368,10 +405,15 @@
 
 				/*Veränderung von Logo2 Größe*/
 				.logo2 {
-					width:450px;
-					height:200px;
+					width:400px;
+					height:150px;
+					padding-right: 0;
+					margin:0 auto;
 				}
 
+				/*Leiste für die Sprachen*/
+			
+				
 				}
 
  	   </style>
@@ -384,7 +426,7 @@
 		<header>
 			
 			<div class="logo">
-				<a href="#"><img src="bilder/Relis.png" alt="Пламменный ЛиС"></a>
+				<a href="ulda.html"><img src="bilder/Relis.png" alt="Пламменный ЛиС"></a>
 			</div>
 			<nav class="lang-menu">
 				<div class="selected-lang"> 
@@ -399,11 +441,11 @@
 
 			<nav class="site-nav">
 				<ul>
-					<li class="current"><a href="ulda.html">Startseite |</a></li>
-					<li><a href="#">Leistungen </a></li>
-					<li><a href="#">Bildergalerie </a></li>
-					<li><a href="#">Teammitglieder </a></li>
-					<li><a href="#">Werbevideo</a></li>	
+					<li class="current"><a href="ulda.html">Рейдвидео</a></li>
+					<li><a href="#">Тактики в картинках </a></li>
+					<li><a href="#">Боссы и абилки </a></li>
+					<li><a href="#">Рлы </a></li>
+					<li><a href="#">Промовидосы</a></li>	
 				</ul>
 
 			</nav>
@@ -529,6 +571,8 @@
 				<h2 id="12">Везакс</h2>
      			<div class="flex-item">
 				
+					<iframe src="https://www.youtube.com/embed/_VFVhAXgikM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 					<figcaption>Убийство везакса</figcaption>
 				</div>
 

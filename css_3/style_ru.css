@@ -1,0 +1,552 @@
+
+/**BODY------------------------------------------------------------------
+-------------------------------------------------------------------------
+------------------------------------------------------------------------*/
+
+/*schriftarten*/
+			/* russo-one-regular - latin_cyrillic */
+			@font-face {
+  				font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  				font-family: 'Russo One';
+  				font-style: normal;
+  				font-weight: 400;
+  				src: url('../fonts/russo-one-v14-latin_cyrillic-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+       				 url('../fonts/russo-one-v14-latin_cyrillic-regular.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+				}
+			/* alatsi-regular - latin-ext_latin_cyrillic-ext */
+			@font-face {
+  				font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  				font-family: 'Alatsi';
+  				font-style: normal;
+  				font-weight: 400;
+  				src: url('../fonts/alatsi-v10-latin-ext_latin_cyrillic-ext-regular.eot'); /* IE9 Compat Modes */
+  				src: url('../fonts/alatsi-v10-latin-ext_latin_cyrillic-ext-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       				 url('../fonts/alatsi-v10-latin-ext_latin_cyrillic-ext-regular.woff2') format('woff2'), /* Super Modern Browsers */
+      				 url('../fonts/alatsi-v10-latin-ext_latin_cyrillic-ext-regular.woff') format('woff'), /* Modern Browsers */
+      				 url('../fonts/alatsi-v10-latin-ext_latin_cyrillic-ext-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       				 url('../fonts/alatsi-v10-latin-ext_latin_cyrillic-ext-regular.svg#Alatsi') format('svg'); /* Legacy iOS */
+						}
+
+
+      		html { 
+        		background-color: whitesmoke;
+        		background-image: url(bilder/2222.png);
+        		/* background-image von https://www.toptal.com/designers/subtlepatterns/tileable-wood/ */ 
+        		background-position: top left; 
+        		background-attachment: fixed; 
+				background-size: cover;
+				scroll-behavior: smooth;
+     			}   
+
+			body {
+				margin: 0 auto;
+				 }
+
+			 h1 { 
+				font-size: 7.5rem; 
+				font-family: alatsi;
+				margin: 0 auto;
+				padding: 2rem 0;
+				background-image: linear-gradient(#f8b700,#f3ec78);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent; 
+				}
+	
+			h2 	{ 
+				font-size: 3.5rem; 
+				font-family: alatsi-regular;
+				margin-bottom: 1rem;
+				margin-left: 1rem;
+				background-image: linear-gradient(#f8b700,#f3ec78);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent; 
+				
+				}
+	
+			p	{
+				font-size: 1.5rem; 
+				color:#0cffdf ;
+				text-shadow: 2px 2px #630eedc9;
+				font-weight: 300;
+				text-align: left;
+				margin-left: 1rem;
+				}
+			
+			/* Collapsing Margins vermeiden*/
+			h1, h2, p, ol, blockquote, section {
+				margin-top:0 ;
+				}
+			
+			a:visited{
+				color:#f8b700;
+				}	
+	
+			a:link{
+				color:#f8b700;
+				background-image: linear-gradient(#f8b700,#f3ec78);
+    			background-size: 100%;
+    			-webkit-background-clip: text;
+    			-webkit-text-fill-color: transparent; 
+    			}	
+		
+			/* mouse over link */
+			a:hover {
+  				color: white;
+				text-decoration: underline;
+				}	
+			
+/**HEADER------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------*/      
+
+			/*Header Gestaltung*/
+			header{
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				}
+
+			.menubutton{
+				display: none;
+				}
+
+/*HEADER->NAV------------------------------------------
+-------------------------------------------------------*/
+			/*Alles was Logo/Maskotchen angeht*/
+			.logo {
+				height: 120px;
+				background-image: linear-gradient(180deg, #220d04, #331407,#6e290c);
+				border:3px solid #504137;
+				border-right: none;
+				border-radius: 15px 0 0 15px;
+				position: absolute;
+				left:20px;
+				}
+/*____________________________________________________*/			
+			/*Language Menu allgemeine Einstellungen*/
+			.lang-menu{
+				padding-top: 25px;
+				font-family: Russo one;
+				min-width: 122px;
+				color:#f8b700;
+				width: 100px;
+				
+				height: 95px;
+				background-image: linear-gradient(180deg, #220d04, #331407,#6e290c);
+				border: 3px solid rgb(80, 65, 55);
+				border-left: none;
+
+				position: absolute;
+				left:120px;
+				}
+			
+			/*HAUPTSPRACHE der Seite*/
+			.selected-lang{
+				cursor: pointer;
+				display: flex;
+				}
+
+			/*FLAGSYMBOL der Seite*/
+			.selected-lang:before{
+				content: '\00a0';
+				display:block;
+				width: 32px;
+				background-image: url(https://flagicons.lipis.dev/flags/4x3/ru.svg);
+				margin: 0 10px;
+				}
+
+			/*Einstellungen zu Spachmenü inkl. Anzeige*/
+			.lang-menu ul {
+				margin: 0;
+				padding: 0;
+				background-color: rgb(41, 22, 14);
+				color:#f8b700;
+				border: 3px solid #29160e;
+				max-width: 120px;
+				
+				list-style: none;
+				border-radius: 5px;
+				display:none;
+				}
+
+			/* VERSTECKTE Sprachmenü ERSCHEINEN mit hover*/
+			.lang-menu:hover ul{
+				display: block;
+				}
+
+			.lang-menu ul li a{
+				width: 125px;
+				display: block;
+				padding:1.5px 10px ;
+				}
+
+			/*FLAGEN für ANDEREN Sprachen EINSTELLUNGEN*/
+			.lang-menu ul li a:before{
+				content: '\00a0';
+				display:inline-block;
+				width: 32px;
+				margin-right: 10px;
+				}
+
+			/*Gestaltung der Sprachmenüsauswahl mit Händchen Symbol*/
+			.lang-menu ul li a:hover{
+				color: white;
+				text-decoration: underline;
+				cursor: pointer;
+				}
+
+			/*die Flagensymbole für die Auswahlliste*/
+			.de:before{
+				content: '\00a0';
+				background-image: url(https://flagicons.lipis.dev/flags/4x3/de.svg);
+				}
+
+			.en:before{
+				background-image: url(https://flagicons.lipis.dev/flags/4x3/gb-eng.svg);
+				}
+
+			.tr:before{
+				background-image: url(https://flagicons.lipis.dev/flags/4x3/tr.svg);
+				}
+/*_______________________________________________*/
+			/*Navigationsleiste in Header*/
+			.current {
+				text-decoration: underline;
+				}
+
+			.site-nav{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				font-family:Russo one ;
+				color:#f8b700;
+				background-image: linear-gradient(180deg, #220d04, #331407,#6e290c);
+				border: 3px solid #504137;
+				border-left: none;
+				border-radius: 0 15px 15px 0;
+				position: absolute;
+				left:240px;
+				right: 20px;
+				min-height: 7.5rem;
+				max-height: 7.5rem;
+				}
+				
+			.site-nav ul {
+				display: flex;
+				flex-wrap: wrap;
+				list-style: none;
+				margin:  auto;
+				padding:  0 ;
+				}
+
+			.site-nav ul li {
+				display: flex;
+				margin: 0 1.5rem;
+				font-size: 4rem;
+				}
+			
+			.site-nav ul li a{
+				padding: 0 1.5rem;
+				font-size: 2rem;
+				}
+
+			h1{
+				margin-top:8rem ;
+				text-align: center;
+				}
+/**ENDE HEADER*/
+
+/**NAV->Gestaltung der Navigation-------------------------
+----------------------------------------------------------
+---------------------------------------------------------*/
+ 			.body-nav{
+				position: sticky;
+				top: 0;
+				display: flex;
+			
+				background-color:rgba(12, 198, 255, 0.6) ;
+				box-shadow: 0px 0px 38px 20px rgba(12, 198, 255, 0.6);
+				}
+			
+			.logo2{
+					position: absolute;
+				}
+
+			.bosses{
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				background-image: linear-gradient(#211510, #29160e);
+				font-size: 1.5rem;
+				font-weight: 300;
+
+				border: 3px solid #504137;
+				margin:  auto;
+				margin-top: 3.7rem;
+				margin-bottom: 3.7rem;
+				padding: 1rem 0;
+				padding-left: 30rem;
+				padding-right: 0;
+				font-family: Russo One;
+				list-style: none;
+				}
+
+			/*Links mit a-Element Gestaltung bosses*/
+			li a {
+				text-decoration: none;
+				padding:1rem 1rem;
+				}
+
+			/*hamburger Menü*/
+		
+			
+			
+/**ENDE NAV*/
+				
+/**MAIN-------------------------------------------------------
+---------------------------------------------------------------
+--------------------------------------------------------------*/
+			section{
+				max-width: 1400px;
+				margin: 0	auto;
+				background-color: rgba(95, 40, 4, 0.8);
+				border: 2px solid goldenrod;
+				box-shadow: 8px 4px 10px rgba(12, 198, 255, 0.6);
+				margin: 10px auto;
+				
+			}
+			section:first-child{
+				margin-top: 8rem;
+			}
+
+			/*Gestaltung von Text in Section*/			
+			.logo img {
+				width: 100px;
+				}	
+			
+			section ul li{
+				font-size: 1.5rem; 
+				color:#0cffdf;
+				text-shadow: 2px 2px #010e0c;
+				font-weight: 300;
+				text-align: left;
+				margin-left: 1rem;
+				}
+			strong {
+				font-size: 1.5rem; 
+				color:#f7f30bf3;
+				text-shadow: 2px 2px #111312;
+				font-weight: 300;
+				text-align: left;
+				}
+				
+			strong a{
+				color: #df8a0c !important;
+				text-shadow: none;
+			}
+/**ENDE MAIN*/
+
+/*FOOTER->Untere Leiste Footer--------------------------------
+--------------------------------------------------------------
+-------------------------------------------------------------*/
+			.site-footer {
+				position: sticky;
+				bottom: 0;
+				background-image: linear-gradient(#211510, #29160e);
+				font-size: 1.5rem;
+
+				font-weight: 300;
+				border: 3px solid #504137;
+				margin: 0 auto;
+				padding: 1.5rem;
+				font-family: Russo One;
+				}
+
+			.site-footer a{
+				text-decoration: none;
+				padding-right:5rem;
+				}
+				
+			/*fixierter nach oben Zeiger*/
+
+			.back-to-top{
+				position: fixed;
+				bottom:0;
+				left: 0;
+				right: 0.5rem;
+				padding: 0.5rem;
+				}
+/**ENDE FOOTER*/
+
+
+/** Responsive layout--------------------------------------------------
+-----------------------------------------------------------------------
+-------------------------------------------------------------------- */
+
+/**BILDSCHIRMGRÖße < 1850px*/
+		
+			@media (max-width: 1850px) {
+				.menubutton{
+					display: none;
+				}
+
+				.site-nav ul li{
+					margin:0 ;
+					font-size: 3rem;
+				}
+				
+				.site-nav ul li a{
+					font-size: 2rem;
+				
+				}
+			}
+
+			@media (max-width: 1000px) {
+				.menubutton{
+					display: none;
+				}
+
+				.site-nav ul li a{
+					font-size: 1.5rem;
+				}
+			}
+
+			@media (max-width:810px) {
+
+			}
+
+			@media  (max-width: 760px)  {
+				.menubutton{
+					display: none;
+				}
+
+				/*Navigation Header*/
+				.site-nav ul{
+					display: flex;
+					flex-direction: column;
+				}
+
+				.site-nav ul li a{
+					font-size: 1rem;
+					}
+				
+				/*Titel Header*/
+				h1	{
+					font-size: 4rem; 
+					}
+	
+				h2{
+					font-size: 2.5rem;
+					text-align: center;
+				}
+
+				/*Veränderung von Logo2 Größe*/
+				.logo2 {
+					width:400px;
+					height:150px;
+					margin:0 auto;
+					
+					
+				
+					}
+
+				/*Navigation (body)*/
+				.bosses {
+					padding: 0;
+					margin-top: 11rem;
+					
+				}
+				
+				.body-nav{
+					box-shadow: 0px 0px 8px 18px rgba(12, 198, 255, 0);
+					background-color: rgba(12, 198, 255, 0);
+					position: inherit;
+					justify-content: center;
+				}
+				
+				section:first-child{
+					margin-top: 1rem;
+				}
+			}
+
+			@media (max-width: 415px) {
+				/*wenn es im browser keinen JS gibt*/
+				.no-js .menubutton{display: none;}
+				
+
+				/*Gestaltung der Menübuttons*/
+				.js .menubutton {
+					display:flex;
+					align-items: center;
+
+					cursor: pointer;
+					background: inherit;
+					color:#f8b700;
+					background-image: linear-gradient(#f8b700,#f3ec78);
+    				background-size: 100%;
+    				-webkit-background-clip: text;
+    				-webkit-text-fill-color: transparent; 
+					font-family: Russo One;
+					font-size: 1.2rem;
+					text-align: center;
+
+					padding: 0.5rem 1rem;
+					border: 0;
+					margin: 0;
+					}
+
+				/*Burger Symbol Gestaltung*/
+				.js .menubutton::before{
+					content:url(bilder/menuburger.svg);
+					width: 1.9rem;
+					margin-right: 0.25rem;
+					}
+				
+				/*Die Navidation per Css Ausblenden*/
+				.js .site-nav ul{
+					max-height: 0;
+					overflow: hidden;
+					padding: 0;
+				}
+				
+				/*das Aktivieren von Burgermenü*/
+				.js .showmenu + ul{
+					max-height: 100rem;
+					transition: max-height 0.5s ease;
+					overflow: auto;
+				}
+				/*gestaltung von Logo language und site-nav*/
+				.logo{
+					left:0px;
+				}
+
+				.lang-menu{
+					left:100px;
+				}
+				
+				.site-nav{
+					display: flex;
+					justify-content: center;
+					align-items: flex-start;
+					left:220px;
+					right:0px;
+					
+				}
+
+				/*Positionierung von Bröttchenmeü*/
+				.inside{
+					margin-top: 11px;
+					margin-left:10px;
+				}
+
+				.site-nav ul {
+					background-color: rgba(34, 13, 4, 0.8);
+					border-radius: 5px;
+				}
+
+				.site-nav ul li a{
+					padding:0;
+					font-size: 0.9rem;
+				}
+				}
+			

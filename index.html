@@ -1,96 +1,123 @@
 <!DOCTYPE html>
 <html lang="de">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Taktiken und Fähigkeiten der Bosse in Ulduar (Normal- und Hardmode)"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Document</title>
-  </head>
 
-  <body class="body">
-    <header>
-      <nav class="navigation">
-        <div class="logo">
-          <img src="images/logo.svg" alt="logo" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Taktiken und Fähigkeiten der Bosse in Ulduar (Normal- und Hardmode)" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Document</title>
+</head>
+
+<body class="body">
+  <header>
+    <nav class="navigation">
+      <div class="logo">
+        <img src="images/logo.svg" alt="logo" />
+      </div>
+      <ul class="groupNav">
+        <a href="wlkommen.html">Willkommen</a>
+        <a href="aktuelles.html">Aktuelles</a>
+        <a href="kurse.html">Kurse</a>
+        <a href="studio.html">Studio</a>
+        <a href="ueberMich.html">Über mich</a>
+        <a href="preise.html">Preise</a>
+        <a href="kontakt.html">Kontakt</a>
+      </ul>
+      <div class="burger-menu" onclick="toggleMenu()">
+        <h1 class="menuText">Menu</h1>
+        <img src="images/Group 11.svg" alt="burger" class="brgOpen">
+      </div>
+      <div class="burger">
+        <button class="navMenubtn">
+          <a href="wlkommen.html" class="navMenubtnText">Willkommen</a>
+        </button>
+        <button class="navMenubtn">
+          <a href="wlkommen.html" class="navMenubtnText">Aktuelles</a>
+        </button>
+        <button class="navMenubtn">
+          <a href="wlkommen.html" class="navMenubtnText">Kurse</a>
+        </button>
+        <button class="navMenubtn">
+          <a href="wlkommen.html" class="navMenubtnText">Studio</a>
+        </button>
+        <button class="navMenubtn">
+          <a href="wlkommen.html" class="navMenubtnText">Über mich</a>
+        </button>
+        <button class="navMenubtn">
+          <a href="wlkommen.html" class="navMenubtnText">Preise</a>
+        </button>
+        <button class="navMenubtn">
+          <a href="wlkommen.html" class="navMenubtnText">Kontakt</a>
+        </button>
+      </div>
+    </nav>
+    <h1 class="title">Yoga in Pockau</h1>
+  </header>
+  <main>
+    <div class="imageContainer">
+      <div class="mainImage">
+        <img src="images/mainImage.png" alt="main" width="100%" />
+      </div>
+    </div>
+    <div class="globalContainer">
+      <div class="welcomeGreteeng">
+        <h3 class="welcome">Willkommen bei unserer Yoga-Community!</h3>
+        <h3 class="citate">
+          "Yoga ist das zur Ruhe bringen der Gedankenwellen im Geiste." -
+          Patanjali Yoga Sutra 1.1-4
+        </h3>
+        <p class="text">
+          Tauchen Sie ein in die tiefe Philosophie und Praxis des Yoga, wo
+          Geist, Seele und Körper in harmonischer Einheit verschmelzen. Bei
+          uns geht es nicht nur darum, bestimmte Positionen einzunehmen,
+          sondern vielmehr darum, eine innere Reise der Selbstentdeckung und
+          Verbindung zu erleben.
+        </p>
+      </div>
+      <div class="herbs">
+        <div class="btnAndRectAngle">
+          <div class="rectangle">
+            <p class="titleText">POKAU</p>
+            <img class="herbsImg" src="images/pockau.png" alt="pokau" />
+          </div>
+          <button class="btnZumKurs">
+            <a href="http://" class="btnText">ZUM KURS</a>
+          </button>
         </div>
-            <ul class="groupNav">
-              <a href="wlkommen.html">Willkommen</a>
-              <a href="aktuelles.html">Aktuelles</a>
-              <a href="kurse.html">Kurse</a>
-              <a href="studio.html">Studio</a>
-              <a href="ueberMich.html">Über mich</a>
-              <a href="preise.html">Preise</a>
-              <a href="kontakt.html">Kontakt</a>
-            </ul>     
-      </nav>
-      <h1 class="title">Yoga in Pockau</h1>
-    </header>
-    <main>
-      <div class="imageContainer">
-        <div class="mainImage">
-          <img src="images/mainImage.png" alt="main" width="100%" />
+        <div class="btnAndRectAngle">
+          <div class="rectangle">
+            <p class="titleText">LEIPZIG</p>
+            <img class="herbsImg" src="images/leipzig.png" alt="leipzig" />
+          </div>
+          <button class="btnZumKurs">
+            <a href="http://" class="btnText">ZUM KURS</a>
+          </button>
+        </div>
+        <div class="btnAndRectAngle">
+          <div class="rectangle">
+            <p class="titleText">BORNA</p>
+            <img class="herbsImg" src="images/borna.png" alt="borna" />
+          </div>
+          <button class="btnZumKurs">
+            <a href="http://" class="btnText">ZUM KURS</a>
+          </button>
+        </div>
+        <div class="btnAndRectAngle">
+          <div class="rectangle">
+            <p class="titleText">GEITHEIN</p>
+            <img class="herbsImg" src="images/geithein.png" alt="geithein" />
+          </div>
+          <button class="btnZumKurs">
+            <a href="http://" class="btnText">ZUM KURS</a>
+          </button>
         </div>
       </div>
-      <div class="globalContainer">
-        <div class="welcomeGreteeng">
-          <h3 class="welcome">Willkommen bei unserer Yoga-Community!</h3>
-          <h3 class="citate">
-            "Yoga ist das zur Ruhe bringen der Gedankenwellen im Geiste." -
-            Patanjali Yoga Sutra 1.1-4
-          </h3>
-          <p class="text">
-            Tauchen Sie ein in die tiefe Philosophie und Praxis des Yoga, wo
-            Geist, Seele und Körper in harmonischer Einheit verschmelzen. Bei
-            uns geht es nicht nur darum, bestimmte Positionen einzunehmen,
-            sondern vielmehr darum, eine innere Reise der Selbstentdeckung und
-            Verbindung zu erleben.
-          </p>
-        </div>
-        <div class="herbs">
-          <div class="btnAndRectAngle">
-            <div class="rectangle">
-              <p class="titleText">POKAU</p>
-              <img class="herbsImg" src="images/pockau.png" alt="pokau" />
-            </div>
-            <button class="btnZumKurs">
-              <a href="http://" class="btnText">ZUM KURS</a>
-            </button>
-          </div>
-          <div class="btnAndRectAngle">
-            <div class="rectangle">
-              <p class="titleText">LEIPZIG</p>
-              <img class="herbsImg" src="images/leipzig.png" alt="leipzig" />
-            </div>
-            <button class="btnZumKurs">
-              <a href="http://" class="btnText">ZUM KURS</a>
-            </button>
-          </div>
-          <div class="btnAndRectAngle">
-            <div class="rectangle">
-              <p class="titleText">BORNA</p>
-              <img class="herbsImg" src="images/borna.png" alt="borna" />
-            </div>
-            <button class="btnZumKurs">
-              <a href="http://" class="btnText">ZUM KURS</a>
-            </button>
-          </div>
-          <div class="btnAndRectAngle">
-            <div class="rectangle">
-              <p class="titleText">GEITHEIN</p>
-              <img class="herbsImg" src="images/geithein.png" alt="geithein" />
-            </div>
-            <button class="btnZumKurs">
-              <a href="http://" class="btnText">ZUM KURS</a>
-            </button>
-          </div>
-        </div>
-    </main>
-    <footer class="footer">
-      <a class="up" href="#top">Nach oben</a>
-    </footer>
-  </body>
+  </main>
+  <footer class="footer">
+    <a class="up" href="#top">Nach oben</a>
+  </footer>
+  <script src="JS/script1.js"></script>
+</body>
+
 </html>

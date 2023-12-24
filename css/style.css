@@ -20,17 +20,19 @@
     background: #F4F4ED;
 }
 
+/* HEADER */
 header {
     margin: 0 auto;
     text-align: center;
 }
 
-/* NAVIGATION */
+/*HEADER NAVIGATION */
 .navigation {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: space-around;
     min-width: 80%;
     height: 9.375rem;
     padding-bottom: 0.0625rem;
@@ -46,7 +48,8 @@ header {
     flex-shrink: 0;
 }
 
-ul.groupNav {
+/* MENU LIST */
+.groupNav {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -58,7 +61,12 @@ ul.groupNav {
     color: #000000;
 }
 
+.burger {
+    display: none;
+}
+
 a {
+    margin: 0 15px;
     color: #000;
     font-family: Macondo Swash Caps;
     font-size: 1.5rem;
@@ -68,9 +76,19 @@ a {
     text-decoration: none;
 }
 
+/* BURGER MENU */
+.burger-menu {
+    display: none;
+    cursor: pointer;
+}
+
+
+
+/* END OF BURGER MENU */
+
+/* TITLE */
 h1 {
     margin: 0.5rem;
-
 }
 
 .title {
@@ -83,6 +101,9 @@ h1 {
     font-weight: 400;
     line-height: normal;
 }
+
+/* END OF HEADER */
+
 
 /* MAIN */
 /* Image */
@@ -249,4 +270,71 @@ img .mainImage {
     font-weight: 400;
     line-height: normal;
     margin: 20px;
+}
+
+/* MEDIA QUERY for SMALL SCREENS BELOW 768px */
+@media (max-width: 768px) {
+    .burger-menu {
+        display: inline-flex;
+        height: 9.375rem;
+        padding: 0rem 2.625rem 0rem 2.6875rem;
+        justify-content: center;
+        align-items: center;
+        gap: 1.875rem;
+        flex-shrink: 0;
+    }
+
+    .groupNav {
+        display: none;
+    }
+
+    .burger {
+        display: none;
+    }
+
+    .burger.active {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+        padding: 5rem;
+        border-radius: 5px;
+        padding-top: 0;
+        padding-bottom: 5px;
+        z-index: 25;
+        background-color: #F6F4DA;
+    }
+
+    .navMenubtn {
+        z-index: 50;
+        margin: 5px 0;
+        width: 24.375rem;
+        height: 4.375rem;
+        border-radius: 0.9375rem;
+        border: 4px solid rgba(243, 150, 11, 0.75);
+        background: #F8D109;
+        box-shadow: 5px 7px 4px 2px rgba(251, 137, 4, 0.53);
+    }
+
+    .navMenubtnText {
+        color: #F6F4DA;
+        text-shadow: 0px 4px 4px #000;
+        font-family: Macondo Swash Caps;
+        font-size: 2.5rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .menuText {
+        color: #000;
+        text-shadow: 0px 4px 4px #000;
+        font-family: Macondo Swash Caps;
+        font-size: 1.875rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+
 }

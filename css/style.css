@@ -42,11 +42,11 @@ header {
 }
 
 /* Logo */
-/* .logo {
+.logo {
     width: 5%;
     height: 9.25rem;
     flex-shrink: 0;
-} */
+}
 
 /* MENU LIST */
 .groupNav {
@@ -55,8 +55,8 @@ header {
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    width: 63.9375rem;
-    height: 2.1875rem;
+    width: 80%;
+    height: 5rem;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.50));
     color: #000000;
 }
@@ -277,7 +277,7 @@ img .mainImage {
     .burger-menu {
         display: inline-flex;
         height: 9.375rem;
-        padding: 0rem 2.625rem 0rem 2.6875rem;
+        padding: 0rem 2.625rem 0rem 9rem;
         justify-content: center;
         align-items: center;
         gap: 1.875rem;

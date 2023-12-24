@@ -296,11 +296,10 @@ img .mainImage {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin: 0;
-        padding: 5rem;
-        border-radius: 5px;
-        padding-top: 0;
-        padding-bottom: 5px;
+        align-items: center;
+        box-shadow: 0px 10px 4px 0px rgba(0, 0, 0, 0.50);
+        width: 100%;
+        padding-bottom: 25px;
         z-index: 25;
         background-color: #F6F4DA;
     }
@@ -317,11 +316,11 @@ img .mainImage {
     }
 
     .navMenubtnText {
-        -webkit-text-stroke: 1.5px navy;
+        -webkit-text-stroke: 1.5px rgba(19, 3, 101, 0.8);
         color: #F6F4DA;
         text-shadow: 0px 4px 4px #000;
         font-family: Macondo Swash Caps;
-        font-size: 2.5rem;
+        font-size: 3rem;
         font-style: normal;
         font-weight: 400;
         line-height: normal;

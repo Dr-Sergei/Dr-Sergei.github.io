@@ -317,6 +317,7 @@ img .mainImage {
     }
 
     .navMenubtnText {
+        -webkit-text-stroke: 1.5px navy;
         color: #F6F4DA;
         text-shadow: 0px 4px 4px #000;
         font-family: Macondo Swash Caps;

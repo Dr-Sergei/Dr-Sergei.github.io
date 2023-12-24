@@ -25,13 +25,15 @@ header {
     text-align: center;
 }
 
+/* NAVIGATION */
 .navigation {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
     min-width: 80%;
     height: 9.375rem;
     padding-bottom: 0.0625rem;
-    justify-content: space-between;
-    align-items: flex-start;
     flex-shrink: 0;
     background: linear-gradient(180deg, #ECD821 0%, rgba(236, 216, 33, 0.00) 100%);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -44,26 +46,16 @@ header {
     flex-shrink: 0;
 }
 
-.navmenu {
-    display: flex;
-    height: 9.3125rem;
-    padding-right: 5rem;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
-}
-
-.groupNav {
+ul.groupNav {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     width: 63.9375rem;
     height: 2.1875rem;
-    flex-shrink: 0;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.50));
     color: #000000;
-
 }
 
 a {
@@ -164,6 +156,7 @@ img .mainImage {
 .herbs {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
     padding: 20px;
@@ -195,18 +188,15 @@ img .mainImage {
 }
 
 .herbsImg {
-    margin: 20px 0;
-}
-
-.buttonsZumKurs {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    padding-bottom: 20px;
+    flex-wrap: wrap;
 }
 
+
+
+/* BUTTONS */
 .btnZumKurs {
+    margin: 15px;
     width: 13rem;
     height: 3.0625rem;
     flex-shrink: 0;
@@ -228,6 +218,14 @@ img .mainImage {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+/* rectangle plus button container */
+.btnAndRectAngle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 /* FOOTER */

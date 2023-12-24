@@ -30,7 +30,7 @@ header {
 .navigation {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     align-items: center;
     justify-content: space-around;
     min-width: 80%;
@@ -336,5 +336,8 @@ img .mainImage {
         line-height: normal;
     }
 
+    .navigation {
+        flex-wrap: wrap;
+    }
 
 }

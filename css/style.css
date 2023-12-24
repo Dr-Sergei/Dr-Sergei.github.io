@@ -39,11 +39,10 @@ header {
     flex-shrink: 0;
     background: linear-gradient(180deg, #ECD821 0%, rgba(236, 216, 33, 0.00) 100%);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-
 }
 
 .logo {
-    width: 10%;
+    width: 5%;
     height: 9.25rem;
     flex-shrink: 0;
 }

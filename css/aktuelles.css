@@ -110,7 +110,7 @@ h1 {
 /* END OF HEADER */
 
 /* MAIN */
-.impressumContainer {
+.aktuellesContainer {
     display: block;
     margin: auto;
     width: 50%;
@@ -224,7 +224,7 @@ h1 {
     }
 
     /* MAIN */
-    .impressumContainer {
+    .aktuellesContainer {
         width: 90%;
     }
 
@@ -323,7 +323,7 @@ h1 {
         font-size: 3.5rem;
     }
 
-    .impressumContainer {
+    .aktuellesContainer {
         width: 100%;
     }
 }
@@ -344,7 +344,7 @@ h1 {
 
     /* MAIN */
     /* CONTANT CONTAINER */
-    .impressumContainer {
+    .aktuellesContainer {
         margin-bottom: 55px;
     }
 

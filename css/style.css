@@ -260,6 +260,11 @@ img .mainImage {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
+.social_media {
+    display: block;
+    margin: 0 auto;
+}
+
 .up {
     color: #000;
     font-family: Macondo Swash Caps;
@@ -280,6 +285,10 @@ img .mainImage {
         align-items: center;
         gap: 1.875rem;
         flex-shrink: 0;
+    }
+
+    .title {
+        font-size: 4rem;
     }
 
     .groupNav {
@@ -306,7 +315,7 @@ img .mainImage {
     .navMenubtn {
         z-index: 50;
         margin: 5px 0;
-        width: 24.375rem;
+        width: 90%;
         height: 4.375rem;
         border-radius: 0.9375rem;
         border: 4px solid rgba(243, 150, 11, 0.75);
@@ -350,7 +359,23 @@ img .mainImage {
         display: none;
     }
 
+    .title {
+        font-size: 4rem;
+    }
+
     .burger-menu {
         padding: 0;
     }
+}
+
+/* MEDIA QUERY for SMALL SCREENS BELOW 280px GALAXY FOLD*/
+@media (max-width: 375px) {
+    .title {
+        font-size: 4rem;
+    }
+
+    .navMenubtnText {
+        font-size: 2.5rem;
+    }
+
 }

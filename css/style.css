@@ -269,6 +269,7 @@ img .mainImage {
 .social_media {
     display: block;
     margin: 0 auto;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.50));
 }
 
 .social_media>a>img {
@@ -277,6 +278,7 @@ img .mainImage {
 
 .infos {
     margin: 10px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.50));
 }
 
 .up {

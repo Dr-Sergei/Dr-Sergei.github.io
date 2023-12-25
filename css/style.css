@@ -213,8 +213,6 @@ img .mainImage {
     flex-wrap: wrap;
 }
 
-
-
 /* BUTTONS */
 .btnZumKurs {
     margin: 15px;
@@ -304,6 +302,7 @@ img .mainImage {
         background-color: #F6F4DA;
     }
 
+    /* STYLE OF THE BUTTONS */
     .navMenubtn {
         z-index: 50;
         margin: 5px 0;
@@ -315,6 +314,7 @@ img .mainImage {
         box-shadow: 5px 7px 4px 2px rgba(251, 137, 4, 0.53);
     }
 
+    /* TEXT OF THE BUTTONS */
     .navMenubtnText {
         -webkit-text-stroke: 1.5px rgba(19, 3, 101, 0.8);
         color: #F6F4DA;
@@ -326,6 +326,7 @@ img .mainImage {
         line-height: normal;
     }
 
+    /* TEXT OF THE WORD MENU */
     .menuText {
         color: #000;
         text-shadow: 0px 4px 4px #000;
@@ -336,8 +337,20 @@ img .mainImage {
         line-height: normal;
     }
 
+    /* BURGER-MENU WRAPPING AS A COLUMN*/
     .navigation {
         flex-wrap: wrap;
     }
 
+}
+
+/* MEDIA QUERY for SMALL SCREENS BELOW 375px */
+@media (max-width: 375px) {
+    .logo {
+        display: none;
+    }
+
+    .burger-menu {
+        padding: 0;
+    }
 }

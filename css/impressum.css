@@ -230,6 +230,11 @@ h1 {
         display: none;
     }
 
+    /* MAIN */
+    .impressumContainer {
+        width: 80%;
+    }
+
     .burger {
         display: none;
     }
@@ -318,16 +323,45 @@ h1 {
     .burger-menu {
         padding: 0;
     }
+
+    /* MAIN */
+    .title {
+        margin: 0;
+        font-size: 3.5rem;
+    }
+
+    .impressumContainer {
+        width: 100%;
+    }
 }
 
 /* MEDIA QUERY for SMALL SCREENS BELOW 280px GALAXY FOLD*/
 @media (max-width: 375px) {
     .title {
-        font-size: 4rem;
+        font-size: 3.5rem;
+        margin-bottom: 20px;
+    }
+
+    .welcome {
+        font-size: 2rem;
+        margin: 0;
+    }
+
+    .text {
+        padding: 0;
     }
 
     .navMenubtnText {
         font-size: 2.5rem;
+    }
+
+    .impressumContainer {
+        margin-bottom: 55px;
+    }
+
+    .infos {
+        display: flex;
+        flex-direction: column;
     }
 
 }

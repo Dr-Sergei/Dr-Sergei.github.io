@@ -65,7 +65,7 @@ header {
     display: none;
 }
 
-a {
+ul>a {
     margin: 0 15px;
     color: #000;
     font-family: Macondo Swash Caps;
@@ -349,6 +349,23 @@ img .mainImage {
     /* BURGER-MENU WRAPPING AS A COLUMN*/
     .navigation {
         flex-wrap: wrap;
+    }
+
+    /* FOOTER */
+    .footer {
+        flex-direction: column;
+
+    }
+
+    .social_media {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .social_media>a>img {
+        margin: 2.5px;
     }
 
 }

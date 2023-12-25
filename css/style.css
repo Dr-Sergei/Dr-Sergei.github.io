@@ -46,6 +46,8 @@ header {
     width: 5%;
     height: 9.25rem;
     flex-shrink: 0;
+    display: flex;
+    align-items: center;
 }
 
 /* MENU LIST */
@@ -63,6 +65,10 @@ header {
 
 .burger {
     display: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 ul>a {
@@ -263,6 +269,10 @@ img .mainImage {
 .social_media {
     display: block;
     margin: 0 auto;
+}
+
+.social_media>a>img {
+    margin: 15px;
 }
 
 .up {

@@ -15,7 +15,6 @@
     padding: 0;
     display: block;
     margin: 0 auto;
-    height: 115.8125rem;
     border: solid rgba(216, 219, 74, 0.09);
     background: #F4F4ED;
 }
@@ -170,7 +169,6 @@ h1 {
     display: flex;
     min-width: 80%;
     height: 9.375rem;
-    padding-bottom: 0.0625rem;
     justify-content: flex-end;
     align-items: center;
     border-radius: 0.3125rem;
@@ -345,7 +343,7 @@ h1 {
     /* MAIN */
     /* CONTANT CONTAINER */
     .aktuellesContainer {
-        margin-bottom: 55px;
+        margin-bottom: 85px;
     }
 
     /* H1 ELEMENT */

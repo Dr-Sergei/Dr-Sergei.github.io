@@ -190,23 +190,23 @@ tr:hover {
 }
 
 #pockau {
-    background: url(../images/Kurse/pockau.png), lightgray 50% / cover no-repeat;
+    background: url(../images/Kurse/pockau.png), rgb(255, 252, 252) 50% / cover no-repeat;
 }
 
 #leipzig {
-    background: url(../images/Kurse/leipzig.png), lightgray 50% / cover no-repeat;
+    background: url(../images/Kurse/leipzig.png), rgb(255, 252, 252) 50% / cover no-repeat;
 }
 
 #borna {
-    background: url(../images/Kurse/borna.png), lightgray 50% / cover no-repeat;
+    background: url(../images/Kurse/borna.png), rgb(255, 252, 252) 50% / cover no-repeat;
 }
 
 #geithain {
-    background: url(../images/Kurse/geithain.png), lightgray 50% / cover no-repeat;
+    background: url(../images/Kurse/geithain.png), rgb(255, 252, 252) 50% / cover no-repeat;
 }
 
 #bitterfeld {
-    background: url(../images/Kurse/bitterfeld.png), lightgray 50% / cover no-repeat;
+    background: url(../images/Kurse/bitterfeld.png), rgb(255, 252, 252) 50% / cover no-repeat;
 }
 
 

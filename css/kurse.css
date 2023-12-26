@@ -273,16 +273,12 @@ tr:hover {
     border-radius: 0.9375rem;
     background: #0E40F1;
     box-shadow: 10px 10px 4px 0px rgba(0, 0, 0, 0.50);
-    color: #FFF;
-    font-family: Macondo Swash Caps;
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
 }
 
 .btnText {
-    color: #FFF;
+    color: #f3f3ed;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
+    -webkit-text-stroke: 1.5px rgba(241, 241, 245, 0.1);
     font-family: Macondo Swash Caps;
     font-size: 1.5rem;
     font-style: normal;

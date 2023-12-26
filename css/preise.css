@@ -307,6 +307,13 @@ tr:hover {
     line-height: normal;
 }
 
+.anmeldung {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 /* FOOTER */
 .footer {
     display: flex;

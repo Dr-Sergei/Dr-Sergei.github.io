@@ -278,15 +278,15 @@ tr:hover {
 
 .city>.adressText>a {
     /* Styles for non-visited links */
-    color: rgb(0, 0, 0);
-    text-shadow: 5px 7px 4px rgba(0, 0, 0, 0.50);
+    color: rgb(115, 5, 249);
+    text-shadow: 5px 7px 4px rgba(115, 5, 249);
     -webkit-text-stroke: 1.5px rgba(4, 1, 14, 0.8);
 }
 
 .city>.adressText>a:visited {
     /* Styles for visited links */
-    color: rgb(0, 0, 0);
-    text-shadow: 5px 7px 4px rgba(0, 0, 0, 0.50);
+    color: rgb(115, 5, 249);
+    text-shadow: 5px 7px 4px rgba(115, 5, 249);
     -webkit-text-stroke: 1.5px rgba(4, 1, 14, 0.8);
 }
 

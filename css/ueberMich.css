@@ -109,6 +109,13 @@ h1 {
 /* END OF HEADER */
 
 /* MAIN */
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .meContainer {
     display: flex;
     flex-direction: row;

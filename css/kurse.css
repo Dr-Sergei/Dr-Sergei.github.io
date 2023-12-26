@@ -118,6 +118,7 @@ h1 {
 
 /* H1 ELEMENT */
 .welcome {
+    margin: 0;
     text-align: center;
     color: #000;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50), 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -139,6 +140,8 @@ h1 {
     line-height: 2em;
     padding: 10px;
 }
+
+
 
 /* TABLE from 780px */
 table {
@@ -178,6 +181,7 @@ tr:hover {
 }
 
 .city {
+    margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -214,7 +218,7 @@ tr:hover {
 
 /* TEXTS */
 .day {
-    margin: 10px 0;
+    margin: 0;
     color: #F8D109;
     -webkit-text-stroke: 1.5px rgba(19, 3, 101, 0.8);
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
@@ -238,7 +242,7 @@ tr:hover {
 }
 
 .time {
-    margin: 10px 0;
+    margin: 0;
     color: #FAC712;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
     -webkit-text-stroke: 1.5px rgba(88, 28, 4, 0.8);
@@ -250,7 +254,7 @@ tr:hover {
 }
 
 .typeYoga {
-    margin: 10px 0;
+    margin: 0;
     color: #0d0dd6;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
     -webkit-text-stroke: 1.5px rgba(35, 5, 169, 0.8);
@@ -261,12 +265,48 @@ tr:hover {
     line-height: normal;
 }
 
+.adressText {
+    margin: 10px 0;
+    text-align: center;
+    color: #000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Macondo Swash Caps;
+    font-size: 1.9rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.city>.adressText>a {
+    /* Styles for non-visited links */
+    color: rgb(0, 0, 0);
+    text-shadow: 5px 7px 4px rgba(0, 0, 0, 0.50);
+    -webkit-text-stroke: 1.5px rgba(4, 1, 14, 0.8);
+}
+
+.city>.adressText>a:visited {
+    /* Styles for visited links */
+    color: rgb(0, 0, 0);
+    text-shadow: 5px 7px 4px rgba(0, 0, 0, 0.50);
+    -webkit-text-stroke: 1.5px rgba(4, 1, 14, 0.8);
+}
+
+.city>.adressText>a:hover,
+.city>.adressText>a:visited:hover {
+    /* Styles for both non-visited and visited links when hovered */
+    color: rgb(252, 0, 0);
+    text-shadow: 5px 7px 41px rgba(4, 9, 100, 0.5);
+    -webkit-text-stroke: 1.5px rgba(14, 1, 1, 0.8);
+}
+
+
+
+
 /* END OF THE BACK */
 /* END OF CARDS */
 
 /* BUTTONS */
 .btnZumKurs {
-    margin: 15px;
+    margin: 0;
     width: 13rem;
     height: 3.0625rem;
     flex-shrink: 0;

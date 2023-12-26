@@ -455,6 +455,12 @@ tr:hover {
 
     .kurseContainer {
         width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* FOTTER */
+    .footer {
+        margin-top: 6rem;
     }
 }
 
@@ -475,7 +481,7 @@ tr:hover {
     /* MAIN */
     /* CONTANT CONTAINER */
     .kurseContainer {
-        margin-bottom: 95px;
+        margin-bottom: 20px;
     }
 
     /* H1 ELEMENT */

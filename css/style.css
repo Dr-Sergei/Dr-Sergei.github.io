@@ -15,7 +15,6 @@
     padding: 0;
     display: block;
     margin: 0 auto;
-    height: 115.8125rem;
     border: solid rgba(216, 219, 74, 0.09);
     background: #F4F4ED;
 }
@@ -87,8 +86,6 @@ ul>a {
     display: none;
     cursor: pointer;
 }
-
-
 
 /* END OF BURGER MENU */
 
@@ -180,6 +177,7 @@ img .mainImage {
     padding: 10px;
 }
 
+/* CARDS */
 .herbs {
     display: flex;
     flex-direction: row;
@@ -219,7 +217,7 @@ img .mainImage {
     flex-wrap: wrap;
 }
 
-/* BUTTONS */
+/*CARD BUTTONS */
 .btnZumKurs {
     margin: 15px;
     width: 13rem;
@@ -252,6 +250,8 @@ img .mainImage {
     align-items: center;
     justify-content: center;
 }
+
+/* END OF CARDS */
 
 /* FOOTER */
 .footer {

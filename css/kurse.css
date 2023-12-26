@@ -140,8 +140,9 @@ h1 {
     padding: 10px;
 }
 
+/* TABLE from 780px */
 table {
-    width: 80%;
+    width: 90%;
     border-collapse: collapse;
     margin: 50px auto;
     border-radius: 10px;
@@ -162,6 +163,104 @@ th {
 tr:hover {
     background-color: #f5f5f5;
 }
+
+/* END OF THE TABLE */
+
+/* CARDS */
+.tableContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.city {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 17.0625rem;
+    height: 20.5rem;
+    flex-shrink: 0;
+    border-radius: 0.3125rem;
+    border: 2px solid #C7BABA;
+    background: #ECECEC;
+    box-shadow: 10px 10px 4px 0px rgba(177, 174, 142, 0.50);
+}
+
+#pockau {
+    background: url(../images/Kurse/pockau.png), lightgray 50% / cover no-repeat;
+}
+
+#leipzig {
+    background: url(../images/Kurse/leipzig.png), lightgray 50% / cover no-repeat;
+}
+
+#borna {
+    background: url(../images/Kurse/borna.png), lightgray 50% / cover no-repeat;
+}
+
+#geithain {
+    background: url(../images/Kurse/geithain.png), lightgray 50% / cover no-repeat;
+}
+
+#bitterfeld {
+    background: url(../images/Kurse/bitterfeld.png), lightgray 50% / cover no-repeat;
+}
+
+
+/* TEXTS */
+.day {
+    margin: 10px 0;
+    color: #F8D109;
+    -webkit-text-stroke: 1.5px rgba(19, 3, 101, 0.8);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
+    font-family: Macondo Swash Caps;
+    font-size: 2.7rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.city {
+    margin: 10px 0;
+    color: #210503;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
+    -webkit-text-stroke: 1.5px rgba(19, 3, 101, 0.8);
+    font-family: Macondo Swash Caps;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.time {
+    margin: 10px 0;
+    color: #FAC712;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
+    -webkit-text-stroke: 1.5px rgba(88, 28, 4, 0.8);
+    font-family: Macondo Swash Caps;
+    font-size: 2.7rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.typeYoga {
+    margin: 10px 0;
+    color: #0d0dd6;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
+    -webkit-text-stroke: 1.5px rgba(35, 5, 169, 0.8);
+    font-family: Macondo Swash Caps;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* END OF THE BACK */
+/* END OF CARDS */
 
 /* BUTTONS */
 .btnZumKurs {
